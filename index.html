@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xHazSpace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header con Avatar y Estado -->
+    <header>
+        <div class="avatar">
+            <img src="images/your-avatar.png" alt="Avatar">
+        </div>
+        <div class="user-info">
+            <h1>Estado: High</h1>
+            <p>Signo: Leo</p>
+        </div>
+    </header>
+
+    <!-- Lista de Amigos -->
+    <section id="friends">
+        <h2>Amigos</h2>
+        <ul>
+            <li>Amigo 1</li>
+            <li>Amigo 2</li>
+            <li>Amigo 3</li>
+        </ul>
+    </section>
+
+    <!-- Reproductor de Música -->
+    <section id="music">
+        <h2>Reproductor de Música</h2>
+        <div id="player">
+            <iframe id="musicPlayer" width="560" height="315" src="https://www.youtube.com/embed/ssVCtZBQyus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="controls">
+                <button onclick="playPause()">Play/Pause</button>
+                <button onclick="previousSong()">Previous</button>
+                <button onclick="nextSong()">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
